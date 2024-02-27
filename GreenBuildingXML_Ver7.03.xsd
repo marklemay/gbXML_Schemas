@@ -2168,22 +2168,22 @@ e. CogenGasTurbine
 		<xsd:restriction base="xsd:NMTOKEN">
 			<xsd:enumeration value="InteriorWall">
 				<xsd:annotation>
-					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to two conditioned or unconditioned spaces and that is vertical or tilted at an angle of 60° from horizontal or greater.</xsd:documentation>
+					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to two conditioned or unconditioned spaces.  Unless otherwise determined, such as through a CAD/BIM object model definition, an InteriorWall is vertical or tilted at an angle of 60° from horizontal or greater.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="ExteriorWall">
 				<xsd:annotation>
-					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and that is vertical or tilted at an angle of 60° from horizontal or greater.</xsd:documentation>
+					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space.  Unless otherwise determined, such as through a CAD/BIM object model definition, an ExteriorWall is vertical or tilted at an angle of 60° from horizontal or greater.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="Roof">
 				<xsd:annotation>
-					<xsd:documentation>The upper portion of the building envelope, including opaque areas and fenestration, that is adjacent to one conditioned or unconditioned space and that is horizontal or tilted at an angle of less than 60° from horizontal.</xsd:documentation>
+					<xsd:documentation>The upper portion of the building envelope, including opaque areas and fenestration, that is adjacent to one conditioned or unconditioned space.  Unless otherwise determined, such as through a CAD/BIM object model definition, a Roof is horizontal or tilted at an angle of less than 60° from horizontal.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="InteriorFloor">
 				<xsd:annotation>
-					<xsd:documentation>The lower portion of the building envelope, including opaque area and fenestration, that has conditioned or semiheated space above and is horizontal or tilted at an angle of less than 60 degrees from horizontal but excluding slab-on-grade floors.</xsd:documentation>
+					<xsd:documentation>The lower portion of the building envelope, including opaque area and fenestration, that has conditioned or semiheated space above.  Unless otherwise determined, such as through a CAD/BIM object model definition, an InteriorFloor is horizontal or tilted at an angle of less than 60 degrees from horizontal but excluding slab-on-grade floors.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="ExposedFloor">
@@ -2198,17 +2198,17 @@ e. CogenGasTurbine
 			</xsd:enumeration>
 			<xsd:enumeration value="UndergroundWall">
 				<xsd:annotation>
-					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and earth (soil) and that is vertical or tilted at an angle of 60° from horizontal or greater.</xsd:documentation>
+					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and earth (soil).  Unless otherwise determined, such as through a CAD/BIM object model definition, an UndergroundWall is vertical or tilted at an angle of 60° from horizontal or greater.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="UndergroundSlab">
 				<xsd:annotation>
-					<xsd:documentation>Surface adjacent to one conditioned or unconditioned space and earth (soil) below grade with a tilt between 150° and 180°.</xsd:documentation>
+					<xsd:documentation>Surface adjacent to one conditioned or unconditioned space and earth (soil) below grade.  Unless otherwise determined, such as through a CAD/BIM object model definition, an UndergroundSlab has a tilt between 150° and 180°.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="Ceiling">
 				<xsd:annotation>
-					<xsd:documentation>The upper portion of the building envelope that is adjacent to two conditioned or unconditioned spaces and that is horizontal or tilted at an angle of less than 60° from horizontal.</xsd:documentation>
+					<xsd:documentation>The upper portion of the building envelope that is adjacent to two conditioned or unconditioned spaces.  Unless otherwise determined, such as through a CAD/BIM object model definition, a Ceiling is horizontal or tilted at an angle of less than 60° from horizontal.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="Air">
@@ -2218,17 +2218,17 @@ e. CogenGasTurbine
 			</xsd:enumeration>
 			<xsd:enumeration value="UndergroundCeiling">
 				<xsd:annotation>
-					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and earth (soil) and that is horizontal or tilted at an angle of less than 60° from horizontal.</xsd:documentation>
+					<xsd:documentation>The portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and earth (soil).  Unless otherwise determined, such as through a CAD/BIM object model definition, an UndergroundCeiling is horizontal or tilted at an angle of less than 60° from horizontal.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="RaisedFloor">
 				<xsd:annotation>
-					<xsd:documentation>The lower portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and the outside and is horizontal or tilted at an angle between 150° and 180°.</xsd:documentation>
+					<xsd:documentation>The lower portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and the outside.  Unless otherwise determined, such as through a CAD/BIM object model definition, a RaisedFloor is horizontal or tilted at an angle between 150° and 180°.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="SlabOnGrade">
 				<xsd:annotation>
-					<xsd:documentation>The lower portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and earth (soil) at grade with a tilt between 150° and 180°.</xsd:documentation>
+					<xsd:documentation>The lower portion of the building envelope, including opaque area and fenestration, that is adjacent to one conditioned or unconditioned space and earth (soil) at grade.  Unless otherwise determined, such as through a CAD/BIM object model definition, a SlabOnGrade has a tilt between 150° and 180°.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
 			<xsd:enumeration value="FreestandingColumn">
