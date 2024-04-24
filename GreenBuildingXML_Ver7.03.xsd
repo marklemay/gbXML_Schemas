@@ -6084,13 +6084,7 @@ e. CogenGasTurbine
 			</xsd:choice>
 		</xsd:complexType>
 	</xsd:element>
-	<xsd:element name="ProductName">
-		<xsd:complexType>
-			<xsd:simpleContent>
-				<xsd:extension base="xsd:string"/>
-			</xsd:simpleContent>
-		</xsd:complexType>
-	</xsd:element>
+	<xsd:element name="ProductName" type="xsd:string"/>
 	<xsd:element name="ProjectEntity">
 		<xsd:annotation>
 			<xsd:documentation>Contains information about the originating or modifying file or service that created or modified this file</xsd:documentation>
