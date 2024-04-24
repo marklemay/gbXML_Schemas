@@ -2968,7 +2968,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Meter" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="Results" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="DocumentHistory" minOccurs="0"/>
-				<xsd:element ref="SimulationParameters" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="SimulationParameters" minOccurs="0"/>
 				<xsd:element ref="ZoneHVACEquipment" minOccurs="0" maxOccurs="unbounded"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID"/>
@@ -3692,7 +3692,7 @@ e. CogenGasTurbine
 						<xsd:documentation>Reference to layers that comprise this construction. Multiple LayerId's order is important and specifies the layering of the layer's referenced materials. The first Surface/AdjacentSpaceId entered will determine how the referenced construction layers are ordered with the first construction layer being in contact with the outside or 2nd Surface/AdjacentSpaceId listed and the last layer in contact with the first Surface/AdjacentSpaceId listed.</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
-				<xsd:element ref="ExtEquipId" minOccurs="0" maxOccurs="1">
+				<xsd:element ref="ExtEquipId" minOccurs="0">
 					<xsd:annotation>
 						<xsd:documentation>This element is for purposes of modeling BIPV (building integrated photovoltaics).</xsd:documentation>
 					</xsd:annotation>
@@ -4301,7 +4301,7 @@ e. CogenGasTurbine
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice minOccurs="2" maxOccurs="unbounded">
-				<xsd:element ref="CreatedBy" maxOccurs="1"/>
+				<xsd:element ref="CreatedBy"/>
 				<xsd:element ref="ProgramInfo" maxOccurs="unbounded"/>
 				<xsd:element ref="PersonInfo" maxOccurs="unbounded"/>
 				<xsd:element ref="ModifiedBy" maxOccurs="unbounded"/>
@@ -5204,8 +5204,8 @@ e. CogenGasTurbine
 				<xsd:element ref="Description" minOccurs="0"/>
 				<xsd:element ref="Cost" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="InsideAirFilmResistance" minOccurs="0"/>
-				<xsd:element ref="MaterialId" maxOccurs="1"/>
-				<xsd:element ref="HOutside" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="MaterialId"/>
+				<xsd:element ref="HOutside" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="DOELibIdRef" type="xsd:string">
@@ -6298,8 +6298,8 @@ e. CogenGasTurbine
 	<xsd:element name="ScheduleTypeLimits">
 		<xsd:complexType>
 			<xsd:choice minOccurs="0" maxOccurs="unbounded">
-				<xsd:element ref="LowerLimitValue" minOccurs="0" maxOccurs="1"/>
-				<xsd:element ref="UpperLimitValue" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="LowerLimitValue" minOccurs="0"/>
+				<xsd:element ref="UpperLimitValue" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="type" type="scheduleTypeLimitsEnum" use="required"/>
@@ -6398,8 +6398,8 @@ e. CogenGasTurbine
 			<xsd:documentation>Simulation parameters refer to simulation engine settings that are used during simulation run-time.  These parameters are instructions for a simulation engine to take into account features such as simulation timestep (entered as a number of minutes which should be evenly divisible into 60, see timestep attribute), convergence limits (see ConvergenceLimits), and the version of the simulation engine (version attribute).  This element intends to maintain a record of the settings used to run a simulation, which may be important if gbxml stores simulation results, as a user may wish to know what settings and version of the simulation engine were used for analysis.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexType>
-			<xsd:choice minOccurs="0" maxOccurs="1">
-				<xsd:element ref="ConvergenceLimits" minOccurs="0" maxOccurs="1"/>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="ConvergenceLimits" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="version" type="xsd:string"/>
 			<xsd:attribute name="timestep" type="xsd:decimal"/>
@@ -7088,7 +7088,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Gap" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="Glaze" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="Cost" minOccurs="0" maxOccurs="unbounded"/>
-				<xsd:element ref="ExtEquipId" minOccurs="0" maxOccurs="1">
+				<xsd:element ref="ExtEquipId" minOccurs="0">
 					<xsd:annotation>
 						<xsd:documentation>This element is for purposes of modeling BIPV (building integrated photovoltaics).</xsd:documentation>
 					</xsd:annotation>
@@ -7136,7 +7136,7 @@ e. CogenGasTurbine
 			<xsd:choice minOccurs="2" maxOccurs="unbounded">
 				<xsd:element ref="BeginDate"/>
 				<xsd:element ref="EndDate"/>
-				<xsd:element ref="HolidaysModeled" maxOccurs="1"/>
+				<xsd:element ref="HolidaysModeled"/>
 			</xsd:choice>
 		</xsd:complexType>
 	</xsd:element>
