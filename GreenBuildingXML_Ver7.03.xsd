@@ -894,26 +894,10 @@ e. CogenGasTurbine
 			<xsd:documentation>Used with the floorCategory attribute.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
-			<xsd:enumeration value="OverEnclosedCrawlSpaceOrBasement">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="OverOpenCrawlSpaceOrGarage">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="Basement">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="SlabOnGrade">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="OverEnclosedCrawlSpaceOrBasement"/>
+			<xsd:enumeration value="OverOpenCrawlSpaceOrGarage"/>
+			<xsd:enumeration value="Basement"/>
+			<xsd:enumeration value="SlabOnGrade"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="floorSlabPerimeterHeatLossCoefficientUnitTypeEnum">
@@ -921,16 +905,8 @@ e. CogenGasTurbine
 			<xsd:documentation>Used with the floorSlabPerimeterHeatLossCoefficientUnitType attribute.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
-			<xsd:enumeration value="btuPerHourDegreeFPerLinearFoot">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="wattDegreeCPerLinearMeter">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="btuPerHourDegreeFPerLinearFoot"/>
+			<xsd:enumeration value="wattDegreeCPerLinearMeter"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="flowUnitEnum">
@@ -1030,16 +1006,8 @@ e. CogenGasTurbine
 			<xsd:documentation>Used with the hOutsideUnitType attribute.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
-			<xsd:enumeration value="BTUPerHourSquareFootDegreeF">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="WattsPerSecondSquareMeterDegreeC">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="BTUPerHourSquareFootDegreeF"/>
+			<xsd:enumeration value="WattsPerSecondSquareMeterDegreeC"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="hydronicEquipTypeEnum">
@@ -2915,51 +2883,19 @@ e. CogenGasTurbine
 					<xsd:documentation>Fastest heat transfer</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<xsd:enumeration value="B">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="C">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="D">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="E">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="B"/>
+			<xsd:enumeration value="C"/>
+			<xsd:enumeration value="D"/>
+			<xsd:enumeration value="E"/>
 			<xsd:enumeration value="F">
 				<xsd:annotation>
 					<xsd:documentation>Medium heat transfer</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<xsd:enumeration value="G">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="H">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="I">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="J">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="G"/>
+			<xsd:enumeration value="H"/>
+			<xsd:enumeration value="I"/>
+			<xsd:enumeration value="J"/>
 			<xsd:enumeration value="K">
 				<xsd:annotation>
 					<xsd:documentation>Slowest heat transfer</xsd:documentation>
@@ -6366,9 +6302,6 @@ e. CogenGasTurbine
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="ScheduleTypeLimits">
-		<xsd:annotation>
-			<xsd:documentation/>
-		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice minOccurs="0" maxOccurs="unbounded">
 				<xsd:element ref="LowerLimitValue" minOccurs="0" maxOccurs="1"/>
@@ -7230,9 +7163,6 @@ e. CogenGasTurbine
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="HolidaysModeled">
-		<xsd:annotation>
-			<xsd:documentation/>
-		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:all>
 				<xsd:element ref="Name" minOccurs="1"/>
