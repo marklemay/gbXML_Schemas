@@ -894,26 +894,10 @@ e. CogenGasTurbine
 			<xsd:documentation>Used with the floorCategory attribute.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
-			<xsd:enumeration value="OverEnclosedCrawlSpaceOrBasement">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="OverOpenCrawlSpaceOrGarage">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="Basement">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="SlabOnGrade">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="OverEnclosedCrawlSpaceOrBasement"/>
+			<xsd:enumeration value="OverOpenCrawlSpaceOrGarage"/>
+			<xsd:enumeration value="Basement"/>
+			<xsd:enumeration value="SlabOnGrade"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="floorSlabPerimeterHeatLossCoefficientUnitTypeEnum">
@@ -921,16 +905,8 @@ e. CogenGasTurbine
 			<xsd:documentation>Used with the floorSlabPerimeterHeatLossCoefficientUnitType attribute.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
-			<xsd:enumeration value="btuPerHourDegreeFPerLinearFoot">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="wattDegreeCPerLinearMeter">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="btuPerHourDegreeFPerLinearFoot"/>
+			<xsd:enumeration value="wattDegreeCPerLinearMeter"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="flowUnitEnum">
@@ -1030,16 +1006,8 @@ e. CogenGasTurbine
 			<xsd:documentation>Used with the hOutsideUnitType attribute.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:restriction base="xsd:NMTOKEN">
-			<xsd:enumeration value="BTUPerHourSquareFootDegreeF">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="WattsPerSecondSquareMeterDegreeC">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="BTUPerHourSquareFootDegreeF"/>
+			<xsd:enumeration value="WattsPerSecondSquareMeterDegreeC"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="hydronicEquipTypeEnum">
@@ -2915,51 +2883,19 @@ e. CogenGasTurbine
 					<xsd:documentation>Fastest heat transfer</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<xsd:enumeration value="B">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="C">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="D">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="E">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="B"/>
+			<xsd:enumeration value="C"/>
+			<xsd:enumeration value="D"/>
+			<xsd:enumeration value="E"/>
 			<xsd:enumeration value="F">
 				<xsd:annotation>
 					<xsd:documentation>Medium heat transfer</xsd:documentation>
 				</xsd:annotation>
 			</xsd:enumeration>
-			<xsd:enumeration value="G">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="H">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="I">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
-			<xsd:enumeration value="J">
-				<xsd:annotation>
-					<xsd:documentation/>
-				</xsd:annotation>
-			</xsd:enumeration>
+			<xsd:enumeration value="G"/>
+			<xsd:enumeration value="H"/>
+			<xsd:enumeration value="I"/>
+			<xsd:enumeration value="J"/>
 			<xsd:enumeration value="K">
 				<xsd:annotation>
 					<xsd:documentation>Slowest heat transfer</xsd:documentation>
@@ -3032,7 +2968,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Meter" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="Results" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="DocumentHistory" minOccurs="0"/>
-				<xsd:element ref="SimulationParameters" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="SimulationParameters" minOccurs="0"/>
 				<xsd:element ref="ZoneHVACEquipment" minOccurs="0" maxOccurs="unbounded"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID"/>
@@ -3074,7 +3010,7 @@ e. CogenGasTurbine
 				</xsd:annotation>
 			</xsd:attribute>
 			<xsd:attribute name="version" type="versionEnum" use="required"/>
-			<xsd:attribute name="SurfaceReferenceLocation" type="surfaceReferenceLocationEnum" use="optional">
+			<xsd:attribute name="SurfaceReferenceLocation" type="surfaceReferenceLocationEnum">
 				<xsd:annotation>
 					<xsd:documentation>Use this attribute to determine what type of geometry information is included in the geometry elements. This is specified using an enumeration that includes shell/wall paper and centerline coordinates.</xsd:documentation>
 				</xsd:annotation>
@@ -3102,7 +3038,7 @@ e. CogenGasTurbine
 					<xsd:documentation>References the ID of a Space that is bounded by this surface. First AdjacentSpaceId entered will determine how the referenced construction layers are ordered with the first construction layer being in contact with the outside or 2nd space listed and the last layer in contact with the first space listed. The outward normal of the surface, as defined by the right hand rule of the coordinates in the planar geometry element, is always pointing away from the first AdjacentSpaceID listed.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="surfaceType" type="surfaceTypeEnum" use="optional">
+			<xsd:attribute name="surfaceType" type="surfaceTypeEnum">
 				<xsd:annotation>
 					<xsd:documentation>With interior horizontal surfaces, this attribute can distinguish between ceiling and floor surfaces to avoid double-counting of floor areas, etc. If not present, the surface type can be assumed based on the description of the surface type enums. When the surfaceTypeEnum is provided and the surface attributes (i.e. adjacency, tilt angle) do not match the enumeration's description, the enumeration should have precedence.</xsd:documentation>
 				</xsd:annotation>
@@ -3141,7 +3077,7 @@ e. CogenGasTurbine
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="controlZoneIdRef" type="xsd:IDREF"/>
 			<xsd:attribute name="systemType" type="systemTypeEnum"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -3223,7 +3159,7 @@ e. CogenGasTurbine
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="equipmentType" type="equipmentTypeEnum" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -3284,7 +3220,7 @@ e. CogenGasTurbine
 		  <xsd:element ref="HydronicLoopId" minOccurs="0" maxOccurs="unbounded"/>
 		  <xsd:element ref="AnalysisParameter" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:choice>
-		<xsd:attribute name="preheatCoilType" type="heatingCoilTypeEnum" use="optional"/>
+		<xsd:attribute name="preheatCoilType" type="heatingCoilTypeEnum"/>
 		<xsd:attribute name="heatingCoilType" type="heatingCoilTypeEnum" use="required"/>
 		<xsd:attribute name="coolingCoilType" type="coolingCoilTypeEnum" use="required"/>
 		<xsd:attribute name="id" type="xsd:ID" use="required"/>
@@ -3360,7 +3296,7 @@ e. CogenGasTurbine
 				</xsd:simpleType>
 			</xsd:attribute>
 			<xsd:attribute name="resourceType" type="resourceTypeEnum" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -3483,7 +3419,7 @@ e. CogenGasTurbine
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="buildingType" type="buildingTypeEnum" use="required"/>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
@@ -3501,7 +3437,7 @@ e. CogenGasTurbine
 				<xsd:element ref="PlanarGeometry" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
@@ -3600,7 +3536,7 @@ e. CogenGasTurbine
 					<xsd:documentation>ID for the weather data used for a cooling design day</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
@@ -3756,7 +3692,7 @@ e. CogenGasTurbine
 						<xsd:documentation>Reference to layers that comprise this construction. Multiple LayerId's order is important and specifies the layering of the layer's referenced materials. The first Surface/AdjacentSpaceId entered will determine how the referenced construction layers are ordered with the first construction layer being in contact with the outside or 2nd Surface/AdjacentSpaceId listed and the last layer in contact with the first Surface/AdjacentSpaceId listed.</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
-				<xsd:element ref="ExtEquipId" minOccurs="0" maxOccurs="1">
+				<xsd:element ref="ExtEquipId" minOccurs="0">
 					<xsd:annotation>
 						<xsd:documentation>This element is for purposes of modeling BIPV (building integrated photovoltaics).</xsd:documentation>
 					</xsd:annotation>
@@ -3769,12 +3705,12 @@ e. CogenGasTurbine
 					<xsd:documentation>Use this attribute to reference objects in the DOE2 library</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="constructionIsSchematic" type="xsd:boolean" use="optional" />
+			<xsd:attribute name="constructionIsSchematic" type="xsd:boolean" />
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="Control">
@@ -3783,7 +3719,7 @@ e. CogenGasTurbine
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:attribute name="controlType" type="controlTypeEnum"/>
-			<xsd:attribute name="stages" type="stageTypeEnum" use="optional"/>
+			<xsd:attribute name="stages" type="stageTypeEnum"/>
 			<xsd:attribute name="minPowerRatio" type="xsd:float"/>
 			<xsd:attribute name="operationType" type="operationTypeEnum"/>
 			<xsd:attribute name="performanceIdRef" type="xsd:IDREF"/>
@@ -3842,7 +3778,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="currency" type="currencyTypeEnum"/>
-					<xsd:attribute name="unit" type="xsd:string" use="optional"/>
+					<xsd:attribute name="unit" type="xsd:string"/>
 				</xsd:extension>
 			</xsd:simpleContent>
 		</xsd:complexType>
@@ -4282,7 +4218,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="temperatureUnitEnum"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -4327,7 +4263,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="temperatureUnitEnum"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -4365,10 +4301,10 @@ e. CogenGasTurbine
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice minOccurs="2" maxOccurs="unbounded">
-				<xsd:element ref="CreatedBy" minOccurs="1" maxOccurs="1"/>
-				<xsd:element ref="ProgramInfo" minOccurs="1" maxOccurs="unbounded"/>
-				<xsd:element ref="PersonInfo" minOccurs="1" maxOccurs="unbounded"/>
-				<xsd:element ref="ModifiedBy" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element ref="CreatedBy"/>
+				<xsd:element ref="ProgramInfo" maxOccurs="unbounded"/>
+				<xsd:element ref="PersonInfo" maxOccurs="unbounded"/>
+				<xsd:element ref="ModifiedBy" maxOccurs="unbounded"/>
 			</xsd:choice>
 		</xsd:complexType>
 	</xsd:element>
@@ -4479,7 +4415,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="enthalpyUnitEnum" use="required"/>
-					<xsd:attribute name="enthalpyType" type="enthalpyTypeEnum" use="optional"/>
+					<xsd:attribute name="enthalpyType" type="enthalpyTypeEnum"/>
 				</xsd:extension>
 			</xsd:simpleContent>
 		</xsd:complexType>
@@ -4504,7 +4440,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="powerPerAreaUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -4565,7 +4501,7 @@ e. CogenGasTurbine
 					<xsd:documentation>ID pointing to an air loop</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -4631,7 +4567,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -4651,7 +4587,7 @@ e. CogenGasTurbine
 				<xsd:element ref="MaximumFlow" minOccurs="0"/>
 				<xsd:element ref="RecircFlow" minOccurs="0"/>
 			</xsd:choice>
-			<xsd:attribute name="processScheduleId" type="xsd:IDREF" use="optional"/>
+			<xsd:attribute name="processScheduleId" type="xsd:IDREF"/>
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="FlowPerArea">
@@ -4659,7 +4595,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowPerAreaUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -4673,7 +4609,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -4980,13 +4916,13 @@ e. CogenGasTurbine
 			<xsd:attribute name="controlZoneIdRef" type="xsd:IDREF"/>
 			<xsd:attribute name="primaryLoopId" type="xsd:IDREF"/>
 			<xsd:attribute name="fluidType" type="fluidTypeEnum" use="required"/>
-			<xsd:attribute name="chillerType" type="chillerTypeEnum" use="optional"/>
+			<xsd:attribute name="chillerType" type="chillerTypeEnum"/>
 			<xsd:attribute name="id" type="xsd:ID" use="required">
 				<xsd:annotation>
 					<xsd:documentation>Only use this attribute for secondary loops to reference the primary loop.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5036,7 +4972,7 @@ e. CogenGasTurbine
 			<xsd:attribute name="waterMeterIdRef" type="xsd:IDREF"/>
 			<xsd:attribute name="waterScheduleIdRef" type="xsd:IDREF"/>
 			<xsd:attribute name="primaryLoopId" type="xsd:IDREF"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5064,7 +5000,7 @@ e. CogenGasTurbine
 					<xsd:documentation>Type of hydronic loop </xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="coilType" type="coilTypeEnum" use="optional">
+			<xsd:attribute name="coilType" type="coilTypeEnum">
 			  <xsd:annotation>
 				<xsd:documentation>The type of coil for the hydronic loop.</xsd:documentation>
 			  </xsd:annotation>
@@ -5142,7 +5078,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Reference" minOccurs="0" maxOccurs="unbounded"/>
 			</xsd:choice>
 			<xsd:attribute name="type" type="infiltrationTypeEnum"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5221,7 +5157,7 @@ e. CogenGasTurbine
 					<xsd:documentation>ID pointing to an air loop</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5268,8 +5204,8 @@ e. CogenGasTurbine
 				<xsd:element ref="Description" minOccurs="0"/>
 				<xsd:element ref="Cost" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="InsideAirFilmResistance" minOccurs="0"/>
-				<xsd:element ref="MaterialId" maxOccurs="1"/>
-				<xsd:element ref="HOutside" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="MaterialId"/>
+				<xsd:element ref="HOutside" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="DOELibIdRef" type="xsd:string">
@@ -5356,7 +5292,7 @@ e. CogenGasTurbine
 					<xsd:documentation>ID for a resource meter</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5385,7 +5321,7 @@ e. CogenGasTurbine
 			<xsd:attribute name="type" type="lightControlTypeEnum" use="required"/>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="lightingSystemIdRef" type="xsd:IDREF"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5411,7 +5347,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Reference" minOccurs="0" maxOccurs="unbounded"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5426,7 +5362,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="powerPerAreaUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -5454,7 +5390,7 @@ e. CogenGasTurbine
 				<xsd:element ref="StationId" minOccurs="0"/>
 				<xsd:element ref="Name" minOccurs="0"/>
 				<xsd:element ref="Description" minOccurs="0"/>
-				<xsd:element ref="ZipcodeOrPostalCode" minOccurs="1"/>
+				<xsd:element ref="ZipcodeOrPostalCode"/>
 				<xsd:element ref="Longitude" minOccurs="0"/>
 				<xsd:element ref="Latitude" minOccurs="0"/>
 				<xsd:element ref="Elevation" minOccurs="0"/>
@@ -5577,7 +5513,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional"/>
+					<xsd:attribute name="programId" type="xsd:IDREF"/>
 				</xsd:extension>
 			</xsd:simpleContent>
 		</xsd:complexType>
@@ -5632,7 +5568,7 @@ e. CogenGasTurbine
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="resourceType" type="resourceTypeEnum" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -5689,7 +5625,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional"/>
+					<xsd:attribute name="programId" type="xsd:IDREF"/>
 				</xsd:extension>
 			</xsd:simpleContent>
 		</xsd:complexType>
@@ -5787,7 +5723,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowPerAreaUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -5804,7 +5740,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -5821,7 +5757,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -5871,7 +5807,7 @@ e. CogenGasTurbine
 				</xsd:annotation>
 			</xsd:attribute>
 			<xsd:attribute name="openingType" type="openingTypeEnum" use="required"/>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
@@ -5918,7 +5854,7 @@ e. CogenGasTurbine
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
 					<xsd:attribute name="hydronicLoopIdRef" type="xsd:IDREF" use="required"/>
 					<xsd:attribute name="waterUseScheduleIdRef" type="xsd:IDREF" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -5935,7 +5871,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="peopleNumberUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -5953,7 +5889,7 @@ e. CogenGasTurbine
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="peopleHeatGainUnitEnum" use="required"/>
 					<xsd:attribute name="heatGainType" type="peopleHeatGainTypeEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -6148,13 +6084,7 @@ e. CogenGasTurbine
 			</xsd:choice>
 		</xsd:complexType>
 	</xsd:element>
-	<xsd:element name="ProductName">
-		<xsd:complexType>
-			<xsd:simpleContent>
-				<xsd:extension base="xsd:string"/>
-			</xsd:simpleContent>
-		</xsd:complexType>
-	</xsd:element>
+	<xsd:element name="ProductName" type="xsd:string"/>
 	<xsd:element name="ProjectEntity">
 		<xsd:annotation>
 			<xsd:documentation>Contains information about the originating or modifying file or service that created or modified this file</xsd:documentation>
@@ -6162,8 +6092,8 @@ e. CogenGasTurbine
 		<xsd:complexType>
 			<xsd:choice minOccurs="0" maxOccurs="unbounded">
 				<xsd:element ref="FileName" minOccurs="0"/>
-				<xsd:element ref="URI" minOccurs="1"/>
-				<xsd:element ref="GUID" minOccurs="1"/>
+				<xsd:element ref="URI"/>
+				<xsd:element ref="GUID"/>
 			</xsd:choice>
 		</xsd:complexType>
 	</xsd:element>
@@ -6174,10 +6104,10 @@ e. CogenGasTurbine
 		<xsd:complexType>
 			<xsd:choice minOccurs="0" maxOccurs="unbounded">
 				<xsd:element ref="CompanyName" minOccurs="0"/>
-				<xsd:element ref="ProductName" minOccurs="1"/>
-				<xsd:element ref="Version" minOccurs="1"/>
-				<xsd:element ref="Platform" minOccurs="1"/>
-				<xsd:element ref="ProjectEntity" minOccurs="1"/>
+				<xsd:element ref="ProductName"/>
+				<xsd:element ref="Version"/>
+				<xsd:element ref="Platform"/>
+				<xsd:element ref="ProjectEntity"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 		</xsd:complexType>
@@ -6255,7 +6185,7 @@ e. CogenGasTurbine
 			<xsd:attribute name="currency" type="currencyTypeEnum"/>
 			<xsd:attribute name="resultsType" type="resultsTypeEnum"/>
 			<xsd:attribute name="resourceType" type="resourceTypeEnum" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that generated the results using the id of the ProgramInfo element.</xsd:documentation>
 				</xsd:annotation>
@@ -6270,7 +6200,7 @@ e. CogenGasTurbine
 					<xsd:documentation>Use the startTime attribute to define the start of the first Value element.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="timeIncrement" type="xsd:duration" use="optional">
+			<xsd:attribute name="timeIncrement" type="xsd:duration">
 				<xsd:annotation>
 					<xsd:documentation>This specifies the duration of time between each Value element. This is required if more than one Value element exists in a this Results element.</xsd:documentation>
 				</xsd:annotation>
@@ -6331,7 +6261,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Glare" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="type" type="shadeTypeEnum" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -6358,7 +6288,7 @@ e. CogenGasTurbine
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="type" type="scheduleTypeEnum" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -6366,13 +6296,10 @@ e. CogenGasTurbine
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="ScheduleTypeLimits">
-		<xsd:annotation>
-			<xsd:documentation/>
-		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice minOccurs="0" maxOccurs="unbounded">
-				<xsd:element ref="LowerLimitValue" minOccurs="0" maxOccurs="1"/>
-				<xsd:element ref="UpperLimitValue" minOccurs="0" maxOccurs="1"/>
+				<xsd:element ref="LowerLimitValue" minOccurs="0"/>
+				<xsd:element ref="UpperLimitValue" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 			<xsd:attribute name="type" type="scheduleTypeLimitsEnum" use="required"/>
@@ -6385,25 +6312,25 @@ e. CogenGasTurbine
 		<xsd:complexType>
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
-					<xsd:attribute name="OutsideHighReset" type="xsd:decimal" use="optional">
+					<xsd:attribute name="OutsideHighReset" type="xsd:decimal">
 						<xsd:annotation>
 							<xsd:documentation>Value of the outside drybulb temperature for when defining HVAC system lower supply reset temperature
 				</xsd:documentation>
 						</xsd:annotation>
 					</xsd:attribute>
-					<xsd:attribute name="OutsideLowReset" type="xsd:decimal" use="optional">
+					<xsd:attribute name="OutsideLowReset" type="xsd:decimal">
 						<xsd:annotation>
 							<xsd:documentation>Value of the outside drybulb temperature for when defining HVAC system upper supply reset temperature
 				</xsd:documentation>
 						</xsd:annotation>
 					</xsd:attribute>
-					<xsd:attribute name="SupplyHighReset" type="xsd:decimal" use="optional">
+					<xsd:attribute name="SupplyHighReset" type="xsd:decimal">
 						<xsd:annotation>
 							<xsd:documentation>Value of the upper supply air setpoint temperature for reset of cooling air or heating air temperature
 				</xsd:documentation>
 						</xsd:annotation>
 					</xsd:attribute>
-					<xsd:attribute name="SupplyLowReset" type="xsd:decimal" use="optional">
+					<xsd:attribute name="SupplyLowReset" type="xsd:decimal">
 						<xsd:annotation>
 							<xsd:documentation>Value of the lower supply air setpoint temperature for reset of cooling air or heating air temperature
 				</xsd:documentation>
@@ -6418,7 +6345,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="flowUnitEnum" use="required"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Secondary supply air maximum flow rate</xsd:documentation>
 						</xsd:annotation>
@@ -6471,8 +6398,8 @@ e. CogenGasTurbine
 			<xsd:documentation>Simulation parameters refer to simulation engine settings that are used during simulation run-time.  These parameters are instructions for a simulation engine to take into account features such as simulation timestep (entered as a number of minutes which should be evenly divisible into 60, see timestep attribute), convergence limits (see ConvergenceLimits), and the version of the simulation engine (version attribute).  This element intends to maintain a record of the settings used to run a simulation, which may be important if gbxml stores simulation results, as a user may wish to know what settings and version of the simulation engine were used for analysis.</xsd:documentation>
 		</xsd:annotation>
 		<xsd:complexType>
-			<xsd:choice minOccurs="0" maxOccurs="1">
-				<xsd:element ref="ConvergenceLimits" minOccurs="0" maxOccurs="1"/>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="ConvergenceLimits" minOccurs="0"/>
 			</xsd:choice>
 			<xsd:attribute name="version" type="xsd:string"/>
 			<xsd:attribute name="timestep" type="xsd:decimal"/>
@@ -6495,7 +6422,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="unitlessUnitEnum" use="required"/>
-					<xsd:attribute name="solarIncidentAngle" type="xsd:decimal" use="optional"/>
+					<xsd:attribute name="solarIncidentAngle" type="xsd:decimal"/>
 				</xsd:extension>
 			</xsd:simpleContent>
 		</xsd:complexType>
@@ -6528,9 +6455,9 @@ e. CogenGasTurbine
 				<xsd:element ref="LightPowerPerArea" minOccurs="0"/>
 				<xsd:element ref="EquipPowerPerArea" minOccurs="0"/>
 				<xsd:element ref="AirChangesPerHour" minOccurs="0"/>
-				<xsd:element ref="Area" minOccurs="1"/>
+				<xsd:element ref="Area"/>
 				<xsd:element ref="Temperature" minOccurs="0"/>
-				<xsd:element ref="Volume" minOccurs="1"/>
+				<xsd:element ref="Volume"/>
 				<xsd:element ref="AnalysisParameter" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="PlanarGeometry" minOccurs="0">
 					<xsd:annotation>
@@ -6586,7 +6513,7 @@ e. CogenGasTurbine
 					<xsd:documentation>ID for BuildingStorey this space is on.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
@@ -6601,23 +6528,23 @@ e. CogenGasTurbine
 			<xsd:choice>
 				<xsd:element ref="PlanarGeometry"/>
 			</xsd:choice>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC)
 					file.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="isSecondLevelBoundary" type="xsd:boolean" use="optional">
+			<xsd:attribute name="isSecondLevelBoundary" type="xsd:boolean">
 				<xsd:annotation>
 					<xsd:documentation>If this attribute is set to true, the boundary is important in heat flow calculation.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="surfaceIdRef" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="surfaceIdRef" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Connects the space boundary to a surface representing a building element (or representing the open air).</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="oppositeIdRef" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="oppositeIdRef" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>If surface referenced by SpaceBoundary is adjacent to two spaces, then this references the corresponding SpaceBoundary of the opposite space.</xsd:documentation>
 				</xsd:annotation>
@@ -6670,7 +6597,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Name" minOccurs="0"/>
 				<xsd:element ref="Description" minOccurs="0"/>
 				<xsd:element ref="FamilyName" minOccurs="0"/>
-				<xsd:element ref="AdjacentSpaceId" minOccurs="1" maxOccurs="2">
+				<xsd:element ref="AdjacentSpaceId" maxOccurs="2">
 					<xsd:annotation>
 						<xsd:documentation>First AdjacentSpaceId entered will determine how the referenced construction layers are ordered with the first construction layer being in contact with the outside or 2nd space listed and the last layer in contact with the first space listed. </xsd:documentation>
 					</xsd:annotation>
@@ -6697,7 +6624,7 @@ e. CogenGasTurbine
 					<xsd:documentation>This attribute specifies whether or not direct beam radiation from the sun will ever hit this surface. Only relevant to exterior surface types.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
@@ -6722,7 +6649,7 @@ e. CogenGasTurbine
 			<xsd:simpleContent>
 				<xsd:extension base="xsd:decimal">
 					<xsd:attribute name="unit" type="temperatureUnitEnum"/>
-					<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+					<xsd:attribute name="programId" type="xsd:IDREF">
 						<xsd:annotation>
 							<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 						</xsd:annotation>
@@ -6807,7 +6734,7 @@ e. CogenGasTurbine
 					<xsd:documentation>ID for the schedule of transmittance of a shading surface</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -6865,7 +6792,7 @@ e. CogenGasTurbine
 					<xsd:documentation>Refers to a building-level surface.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -6978,7 +6905,7 @@ e. CogenGasTurbine
 			<xsd:choice minOccurs="0" maxOccurs="unbounded">
 				<xsd:element ref="Name" minOccurs="0"/>
 				<xsd:element ref="Description" minOccurs="0"/>
-				<xsd:element ref="Location" minOccurs="1"/>
+				<xsd:element ref="Location"/>
 				<xsd:element ref="City" minOccurs="0"/>
 				<xsd:element ref="StateOrProvince" minOccurs="0"/>
 				<xsd:element ref="Country" minOccurs="0"/>
@@ -7023,7 +6950,7 @@ e. CogenGasTurbine
 				<xsd:element ref="Reference" minOccurs="0" maxOccurs="unbounded"/>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -7161,20 +7088,20 @@ e. CogenGasTurbine
 				<xsd:element ref="Gap" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="Glaze" minOccurs="0" maxOccurs="unbounded"/>
 				<xsd:element ref="Cost" minOccurs="0" maxOccurs="unbounded"/>
-				<xsd:element ref="ExtEquipId" minOccurs="0" maxOccurs="1">
+				<xsd:element ref="ExtEquipId" minOccurs="0">
 					<xsd:annotation>
 						<xsd:documentation>This element is for purposes of modeling BIPV (building integrated photovoltaics).</xsd:documentation>
 					</xsd:annotation>
 				</xsd:element>
 			</xsd:choice>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
-			<xsd:attribute name="windowTypeIsSchematic" type="xsd:boolean" use="optional" />
+			<xsd:attribute name="windowTypeIsSchematic" type="xsd:boolean" />
 			<xsd:attribute name="DOELibIdRef" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Use this attribute to reference objects in the DOE2 library</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -7207,9 +7134,9 @@ e. CogenGasTurbine
 		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:choice minOccurs="2" maxOccurs="unbounded">
-				<xsd:element ref="BeginDate" minOccurs="1"/>
-				<xsd:element ref="EndDate" minOccurs="1"/>
-				<xsd:element ref="HolidaysModeled" maxOccurs="1"/>
+				<xsd:element ref="BeginDate"/>
+				<xsd:element ref="EndDate"/>
+				<xsd:element ref="HolidaysModeled"/>
 			</xsd:choice>
 		</xsd:complexType>
 	</xsd:element>
@@ -7230,14 +7157,11 @@ e. CogenGasTurbine
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="HolidaysModeled">
-		<xsd:annotation>
-			<xsd:documentation/>
-		</xsd:annotation>
 		<xsd:complexType>
 			<xsd:all>
-				<xsd:element ref="Name" minOccurs="1"/>
+				<xsd:element ref="Name"/>
 				<xsd:element ref="Description" minOccurs="0"/>
-				<xsd:element ref="HolidayDate" minOccurs="1"/>
+				<xsd:element ref="HolidayDate"/>
 			</xsd:all>
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 		</xsd:complexType>
@@ -7300,17 +7224,17 @@ e. CogenGasTurbine
 					<xsd:documentation>ID of the fan schedule for this zone</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="fanTempSchedIdRef" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="fanTempSchedIdRef" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>ID of the fan temperature schedule for this zone</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="ifcGUID" type="xsd:string" use="optional">
+			<xsd:attribute name="ifcGUID" type="xsd:string">
 				<xsd:annotation>
 					<xsd:documentation>Global Unique ID from Industry Foundation Class (IFC) file.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:attribute>
-			<xsd:attribute name="programId" type="xsd:IDREF" use="optional">
+			<xsd:attribute name="programId" type="xsd:IDREF">
 				<xsd:annotation>
 					<xsd:documentation>Please specify the program that added this element.</xsd:documentation>
 				</xsd:annotation>
@@ -7344,9 +7268,9 @@ e. CogenGasTurbine
 		</xsd:choice>
 		<xsd:attribute name="id" type="xsd:ID" use="required"/>
 		<xsd:attribute name="zoneHVACEquipmentType" type="zoneHVACEquipmentTypeEnum" use="required"/>
-		<xsd:attribute name="heatingCoilType" type="heatingCoilTypeEnum" use="optional"/>
-		<xsd:attribute name="coolingCoilType" type="coolingCoilTypeEnum" use="optional"/>
-		<xsd:attribute name="drawVentilation" type="xsd:boolean" use="optional"/>
+		<xsd:attribute name="heatingCoilType" type="heatingCoilTypeEnum"/>
+		<xsd:attribute name="coolingCoilType" type="coolingCoilTypeEnum"/>
+		<xsd:attribute name="drawVentilation" type="xsd:boolean"/>
 	  </xsd:complexType>
 	</xsd:element>
 	<xsd:element name="ZoneHVACEquipmentId">
