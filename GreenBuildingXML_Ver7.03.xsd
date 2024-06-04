@@ -3285,8 +3285,8 @@ e. CogenGasTurbine
 		  <xsd:element ref="AnalysisParameter" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:choice>
 		<xsd:attribute name="preheatCoilType" type="heatingCoilTypeEnum" use="optional"/>
-		<xsd:attribute name="heatingCoilType" type="heatingCoilTypeEnum" use="required"/>
-		<xsd:attribute name="coolingCoilType" type="coolingCoilTypeEnum" use="required"/>
+		<xsd:attribute name="heatingCoilType" type="heatingCoilTypeEnum" use="optional"/>
+		<xsd:attribute name="coolingCoilType" type="coolingCoilTypeEnum" use="optional"/>
 		<xsd:attribute name="id" type="xsd:ID" use="required"/>
 	  </xsd:complexType>
 	</xsd:element>
